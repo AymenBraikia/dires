@@ -1,0 +1,5 @@
+vcpkg_installed/
+build/
+.vscode/
+.git/
+Dockerfile

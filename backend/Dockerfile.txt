@@ -1,0 +1,41 @@
+# Stage 1: Build environment
+FROM ubuntu:24.04 AS builder
+
+# Install build essentials and tools required by vcpkg
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    cmake \
+    git \
+    curl \
+    zip \
+    unzip \
+    tar \
+    pkg-config \
+    && rm -rf /var/lib/apt/lists/*
+
+# Bootstrap vcpkg inside the container
+RUN git clone https://github.com/microsoft/vcpkg.git /opt/vcpkg \
+    && /opt/vcpkg/bootstrap-vcpkg.sh
+ENV VCPKG_ROOT=/opt/vcpkg
+
+WORKDIR /app
+
+# Copy the backend source files
+COPY . .
+
+# Configure and compile using the vcpkg toolchain
+RUN cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE=/opt/vcpkg/scripts/buildsystems/vcpkg.cmake -DCMAKE_BUILD_TYPE=Release
+RUN cmake --build build
+
+# Stage 2: Clean runtime environment
+FROM ubuntu:24.04
+WORKDIR /app
+
+# COPY THE COMPILED BINARY
+# NOTE: Replace 'your_executable_name' with the actual target binary name from your CMakeLists.txt
+COPY --from=builder /app/build/your_executable_name .
+
+# Expose your custom game server port
+EXPOSE 5000
+
+CMD ["./your_executable_name"]

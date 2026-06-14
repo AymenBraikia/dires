@@ -1,0 +1,5 @@
+{
+	"name": "gamebackend",
+	"version": "0.1.0",
+	"dependencies": ["asio", "fmt", "nlohmann-json"]
+}

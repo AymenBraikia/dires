@@ -1,0 +1,42 @@
+{
+	"bushs": [
+		{ "x": 3000, "y": 6800, "angle": 0.5, "size": 1, "type": "bush" },
+		{ "x": 3300, "y": 6800, "angle": 0.5, "size": 2, "type": "bush" },
+		{ "x": 3700, "y": 6800, "angle": 0.5, "size": 3, "type": "bush" }
+	],
+	"trees": [
+		{ "x": 3000, "y": 7200, "angle": 0.5, "size": 1, "type": "tree" },
+		{ "x": 3300, "y": 7200, "angle": 0.5, "size": 2, "type": "tree" },
+		{ "x": 3700, "y": 7200, "angle": 0.5, "size": 3, "type": "tree" }
+	],
+	"stones": [
+		{ "x": 3000, "y": 7600, "angle": 0.5, "size": 1, "type": "stone" },
+		{ "x": 3300, "y": 7600, "angle": 0.5, "size": 2, "type": "stone" },
+		{ "x": 3700, "y": 7600, "angle": 0.5, "size": 3, "type": "stone" }
+	],
+	"golds": [
+		{ "x": 3000, "y": 8000, "angle": 0.5, "size": 1, "type": "gold" },
+		{ "x": 3300, "y": 8000, "angle": 0.5, "size": 2, "type": "gold" },
+		{ "x": 3700, "y": 8000, "angle": 0.5, "size": 3, "type": "gold" }
+	],
+	"diamonds": [
+		{ "x": 3000, "y": 8400, "angle": 0.5, "size": 1, "type": "diamond" },
+		{ "x": 3300, "y": 8400, "angle": 0.5, "size": 2, "type": "diamond" },
+		{ "x": 3700, "y": 8400, "angle": 0.5, "size": 3, "type": "diamond" }
+	],
+	"amethysts": [
+		{ "x": 3000, "y": 8800, "angle": 0.5, "size": 1, "type": "amethyst" },
+		{ "x": 3300, "y": 8800, "angle": 0.5, "size": 2, "type": "amethyst" },
+		{ "x": 3700, "y": 8800, "angle": 0.5, "size": 3, "type": "amethyst" }
+	],
+	"reidites": [
+		{ "x": 3000, "y": 9200, "angle": 0.5, "size": 1, "type": "reidite" },
+		{ "x": 3300, "y": 9200, "angle": 0.5, "size": 2, "type": "reidite" },
+		{ "x": 3700, "y": 9200, "angle": 0.5, "size": 3, "type": "reidite" }
+	],
+	"emeralds": [
+		{ "x": 3000, "y": 9600, "angle": 0.5, "size": 1, "type": "emerald" },
+		{ "x": 3300, "y": 9600, "angle": 0.5, "size": 2, "type": "emerald" },
+		{ "x": 3700, "y": 9600, "angle": 0.5, "size": 3, "type": "emerald" }
+	]
+}
